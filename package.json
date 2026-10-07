@@ -1,0 +1,28 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "a simple message board",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Section33-ops/mini-message-board.git"
+  },
+  "author": "Section33-ops",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Section33-ops/mini-message-board/issues"
+  },
+  "homepage": "https://github.com/Section33-ops/mini-message-board#readme",
+  "dependencies": {
+    "ejs": "^7.0.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
