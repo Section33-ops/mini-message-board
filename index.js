@@ -11,6 +11,8 @@ const __dirname = path.dirname(__filename);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(express.urlencoded({ extended: true }));
+
 app.use('/', messagesRouter);
 
 app.listen(port, (error) => {
@@ -20,3 +22,6 @@ app.listen(port, (error) => {
     console.log(`App is running on port ${port}`);
   }
 });
+
+// https://share.google/aimode/WnpWHjY1xawH4z3Ah
+// https://share.google/aimode/KzmbZyx0806xhILlR

@@ -3,11 +3,18 @@
     <title>Mini Messageboard</title>
   </head>
   <body>
+    <header>
+      <nav><a href="/new">New Message</a></nav>
+    </header>
     
+    <h1>Mini Messageboard</h1>
+
     <% messages.forEach((message) => { %>
-    <h1><%= message.user%></h1>
-    <p>Message: <%= message.text%></p>
-    <p>Date Added: <%= message.added %></p>
-  <% }) %>
+      <div>
+        <h3><%= message.user%></h3>
+        <p>Message: <%= message.text%></p>
+        <p>Date Added: <%= message.added %></p>
+      </div>
+    <% }) %>
   </body>
 </html>

@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <header>
+      <nav><a href="/">Back</a></nav>
+    </header>
+
+    <h1>Create a new message</h1>
+
+    <form method="post" action="/new">
+      <div>
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="authorName" name="authorName" />
+      </div>
+
+      <div>
+        <label for="msgTxt">Message:</label>
+        <textarea name="msgTxt" id="msgTxt" cols="30" rows="5"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
