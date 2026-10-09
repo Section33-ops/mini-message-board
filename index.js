@@ -22,6 +22,3 @@ app.listen(port, (error) => {
     console.log(`App is running on port ${port}`);
   }
 });
-
-// https://share.google/aimode/WnpWHjY1xawH4z3Ah
-// https://share.google/aimode/KzmbZyx0806xhILlR
