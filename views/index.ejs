@@ -1,9 +1,13 @@
 <html>
+  <head>
+    <title>Mini Messageboard</title>
+  </head>
   <body>
     
     <% messages.forEach((message) => { %>
     <h1><%= message.user%></h1>
     <p>Message: <%= message.text%></p>
+    <p>Date Added: <%= message.added %></p>
   <% }) %>
   </body>
 </html>

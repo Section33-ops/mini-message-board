@@ -1,21 +1,9 @@
 import express from 'express';
+import { getMessages } from '../controllers/messageController.js';
 
-const router = express.Router();
+const messagesRouter = express.Router();
 
-const messages = [
-  {
-    text: 'Hi there!',
-    user: 'Amando',
-    added: new Date(),
-  },
-  {
-    text: 'Hello World!',
-    user: 'Charles',
-    added: new Date(),
-  },
-];
+messagesRouter.get('/', getMessages);
+// router.get('/new');
 
-router.get('/');
-router.get('/new');
-
-export default router;
+export default messagesRouter;
